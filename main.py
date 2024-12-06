@@ -61,7 +61,7 @@ def main(args):
     np.random.seed(seed)
     random.seed(seed)
 
-    pgm_file = f'saved_models/pretrain/infomax/pokec_n_7_leakyrelu_hidden-dim(24)_num-layer(2)_epochs(2000)_lr(0.001)_weight_decay(0.0)_weights.pt'
+    pgm_file = f'pokec_n.pt'
     data = load_data(args)
     data.edge_index = fair_edge_mask(args, data)
     
